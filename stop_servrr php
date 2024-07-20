@@ -1,0 +1,13 @@
+<?php
+$server_type = $_GET['server_type'];
+
+if ($server_type == 'ib') {
+    exec('sh servers/stop_ib_server.sh');
+} elseif ($server_type == 'group_convo') {
+    exec('sh servers/stop_group_convo_server.sh');
+} elseif ($server_type == 'post') {
+    exec('sh servers/stop_post_server.sh');
+}
+
+header("Location: index.html");
+?>
