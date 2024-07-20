@@ -1,0 +1,24 @@
+facebook_automation/
+├── index.html
+├── styles.css
+├── scripts.js
+├── start_servers.php
+├── stop_servers.php
+├── includes/
+│   ├── header.php
+│   ├── footer.php
+│   ├── db.php
+│   ├── functions.php
+├── ib.php
+├── group_convo.php
+├── post_server.php
+└── servers/
+    ├── ib_server.py
+    ├── group_convo_server.py
+    ├── post_server.py
+    ├── run_ib_server.sh
+    ├── run_group_convo_server.sh
+    ├── run_post_server.sh
+    ├── stop_ib_server.sh
+    ├── stop_group_convo_server.sh
+    ├── stop_post_server.sh
