@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Automation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <?php include('includes/header.php'); ?>
+    <main>
+        <h1>Facebook Automation</h1>
+        <div>
+            <h2>Servers Control</h2>
+            <div class="server-control">
+                <h3>Inbox Server</h3>
+                <button onclick="startServer('ib')">Start</button>
+                <button onclick="stopServer('ib')">Stop</button>
+            </div>
+            <div class="server-control">
+                <h3>Group Convo Server</h3>
+                <button onclick="startServer('group_convo')">Start</button>
+                <button onclick="stopServer('group_convo')">Stop</button>
+            </div>
+            <div class="server-control">
+                <h3>Post Server</h3>
+                <button onclick="startServer('post')">Start</button>
+                <button onclick="stopServer('post')">Stop</button>
+            </div>
+        </div>
+    </main>
+    <?php include('includes/footer.php'); ?>
+</body>
+</html>
